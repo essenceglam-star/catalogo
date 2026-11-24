@@ -206,7 +206,8 @@ var CARD={
   's-make':{img:'img/s-make.jpg',tag:'Maquiagem profissional',d:'Pele bonita e acabamento que dura a festa toda.'},
   's-penteado':{img:'img/s-penteado.jpg',tag:'Cabelo',d:'Penteado pra eventos, do jeitinho que você imaginou.'},
   's-babyliss':{img:'img/s-babyliss.jpg',tag:'Cabelo',d:'Ondas modeladas com babyliss, com movimento e brilho.'},
-  'combo':{img:'img/combo.jpg',tag:'Sobrancelha + cílios',d:'Sobrancelha com a Lyslie e extensão de cílios com a Geovana Oliveira, no mesmo dia.'}
+  'c-bl-megafox':{img:'img/c-natalina.jpg',tag:'Sobrancelha + cílios',d:'Sobrancelha com a Lyslie e extensão de cílios com a Geovana Oliveira, no mesmo dia.'},
+  'c-henna-br':{img:'img/c-essencial.jpg',tag:'Sobrancelha + cílios',d:'Sobrancelha com a Lyslie e extensão de cílios com a Geovana Oliveira, no mesmo dia.'}
 };
 var ORDEM=['s-browlam','s-henna','s-design','s-buco','s-make','s-penteado','s-babyliss'];
 async function carrega(){var c=await db.doc('publico/catalogo').get();if(c.exists)CAT=c.data();var a=await db.doc('publico/agenda').get();OC=a.exists?(a.data().ocupados||{}):{}}
@@ -214,7 +215,7 @@ function profsDe(s){return (s.profs&&s.profs.length)?s.profs:[s.profId]}
 function ocupado(data,profs,ini,fim){var l=(OC[data]||[]).concat(meus.filter(function(x){return x.split('|')[3]===data}));return l.some(function(x){var p=x.split('|');return (!p[0]||profs.indexOf(p[0])>=0)&&ini<+p[2]&&fim>+p[1]})}
 function nomeCurto(n){return n.replace(/^Combo (\S+) \((.*)\)$/,'Combo $1').replace(/ \(.*\)$/,'')}
 function cartoes(){var el=$('svcs');el.innerHTML='';var ls=CAT.servicos.slice().sort(function(a,b){var ia=a.combo?99:ORDEM.indexOf(a.id),ib=b.combo?99:ORDEM.indexOf(b.id);return (ia<0?50:ia)-(ib<0?50:ib)});
-  ls.forEach(function(s){var c=CARD[s.combo?'combo':s.id]||{d:''};var det=s.combo?(s.nome.match(/\((.*)\)/)||[])[1]:'';
+  ls.forEach(function(s){var c=CARD[s.id]||{d:''};var det=s.combo?(s.nome.match(/\((.*)\)/)||[])[1]:'';
     el.insertAdjacentHTML('beforeend','<div class="svc">'+(c.img?'<div class="img"><img src="'+c.img+'" alt="'+esc(s.nome)+'"><span class="tag">'+esc(c.tag)+'</span></div>':'')+'<div class="in"><h3>'+esc(nomeCurto(s.nome))+'</h3><div class="d">'+esc(det?det+'. '+c.d:c.d)+'</div>'+(c.aviso?'<div class="aviso">'+c.aviso+'</div>':'')+
       '<div class="lin2"><div class="p">'+preco(s.preco)+'<small>'+dur(s.duracao)+'</small></div><button class="btn sm" type="button" data-ag="'+esc(s.id)+'">Agendar</button></div></div></div>')});
   el.querySelectorAll('[data-ag]').forEach(function(b){b.onclick=function(){escolhe(b.dataset.ag)}})}
