@@ -3,212 +3,188 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stúdio Essence Glam · Arcos-MG</title>
-<meta name="description" content="Sobrancelha, maquiagem, penteado e cílios em Arcos-MG. Veja os preços e agende pelo WhatsApp.">
-<meta property="og:title" content="Stúdio Essence Glam · Arcos-MG">
-<meta property="og:description" content="Veja os serviços e os preços e agende pelo WhatsApp.">
-<meta property="og:image" content="img/logo.jpg">
+<title>Lyslie Cruz · Designer de sobrancelhas · Arcos-MG</title>
+<meta name="description" content="Brow Lamination, design de sobrancelhas, henna e maquiagem em Arcos-MG. Veja os horários livres e agende na hora.">
+<meta property="og:title" content="Lyslie Cruz · Designer de sobrancelhas">
+<meta property="og:description" content="Especialista em Brow Lamination em Arcos-MG. Veja os horários livres e agende.">
+<meta property="og:image" content="https://essenceglam-star.github.io/catalogo/img/og.jpg">
+<meta property="og:url" content="https://essenceglam-star.github.io/catalogo/">
+<link rel="icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0E0B07;--card:#18130C;--line:#3A2E1A;--gold:#D4A94E;--gold2:#F1D58C;--txt:#F4ECDD;--mut:#B9AC93;--ivory:#F7F1E6}
+:root{--bg:#FBF7F2;--nude:#F2E9DF;--card:#FFFFFF;--line:#E8DCCE;--ink:#33261F;--mut:#8E7C6F;--rose:#B8876B;--rose2:#94664D;--grad:linear-gradient(135deg,#D9B49A 0%,#B8876B 45%,#94664D 100%)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);font-family:Montserrat,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--ink);font-family:Montserrat,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
-.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
-h1,h2,h3{font-family:Cinzel,serif;font-weight:700;letter-spacing:.02em}
-.gold{color:var(--gold2)}
-.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
-/* topo */
-header{position:sticky;top:0;z-index:20;background:rgba(14,11,7,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.marca{font-family:Cinzel,serif;font-weight:700;font-size:1rem;color:var(--gold2);text-decoration:none;letter-spacing:.06em}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1A1205;font-weight:700;text-decoration:none;border:0;border-radius:999px;padding:12px 22px;font-size:.92rem;cursor:pointer;font-family:inherit}
-.btn.sm{padding:9px 16px;font-size:.82rem}
-.btn.lin{background:none;border:1px solid var(--gold);color:var(--gold2)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500}
+.eyebrow{font-size:.64rem;letter-spacing:.34em;text-transform:uppercase;color:var(--rose2)}
+.script{font-family:Allura,cursive;color:var(--rose2)}
+.ouro{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* marca */
+.marca{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);line-height:1}
+.marca .lc{font-family:"Cormorant Garamond",serif;font-size:1.7rem;font-weight:500;letter-spacing:.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.marca .nm{font-family:"Cormorant Garamond",serif;font-size:1.02rem;letter-spacing:.26em;margin-top:2px}
+.marca .sub{font-size:.5rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mut);margin-top:4px}
+header{position:sticky;top:0;z-index:20;background:rgba(251,247,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+header .marca{flex-direction:row;gap:10px;align-items:center}
+header .marca .lc{font-size:1.9rem}
+header .marca .nm{font-size:.92rem;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:#fff;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:0;border-radius:999px;padding:15px 26px;font-size:.7rem;cursor:pointer;font-family:inherit;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn.ouro-bg{background:var(--grad);color:#fff}
+.btn.sm{padding:9px 16px;font-size:.6rem}
+.btn.lin{background:none;color:var(--ink);border:1px solid var(--ink)}
 /* hero */
-.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background:url(img/brow2.jpg) center 20%/cover}
-.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,11,7,.15) 0%,rgba(14,11,7,.55) 50%,var(--bg) 96%)}
-.hero .wrap{position:relative;padding-bottom:56px;padding-top:120px}
-.hero h1{font-size:clamp(2rem,8vw,3.6rem);line-height:1.08;margin:12px 0 14px;max-width:14ch}
-.hero p{color:var(--mut);max-width:38ch;margin-bottom:24px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.badges span{border:1px solid var(--line);background:rgba(24,19,12,.75);border-radius:999px;padding:6px 12px;font-size:.78rem;color:var(--mut)}
-.badges b{color:var(--txt);font-weight:600}
-section{padding:64px 0}
-.tit{margin-bottom:28px}
-.tit h2{font-size:clamp(1.5rem,5.4vw,2.2rem);margin-top:8px}
-/* profissionais */
-.pros{display:grid;gap:18px}
-@media(min-width:760px){.pros{grid-template-columns:1fr 1fr}}
-.pro{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.pro .foto{aspect-ratio:4/5;background:#000;position:relative;overflow:hidden}
-.pro .foto img{width:100%;height:100%;object-fit:cover}
-.pro .foto .tag{position:absolute;left:14px;bottom:14px;background:rgba(14,11,7,.8);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.78rem}
-.pro .info{padding:18px}
-.pro h3{font-size:1.25rem}
-.pro p{color:var(--mut);font-size:.9rem;margin-top:4px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 6%/cover}
+.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(251,247,242,0) 0%,rgba(251,247,242,0) 46%,rgba(251,247,242,.88) 70%,var(--bg) 90%)}
+.hero .wrap{position:relative;padding-bottom:48px;padding-top:140px;text-align:center}
+.hero .marca{margin-bottom:18px}
+.hero .marca .lc{font-size:3.4rem}
+.hero .marca .nm{font-size:1.3rem}
+.hero h1{font-size:clamp(2.2rem,9.4vw,3.8rem);line-height:1.02;margin:12px 0 12px}
+.hero h1 i{font-style:italic}
+.hero p{color:var(--mut);max-width:34ch;margin:0 auto 24px;font-size:.92rem}
+.linha{width:46px;height:1px;background:var(--grad);margin:14px auto}
+section{padding:58px 0}
+.tit{text-align:center;margin-bottom:26px}
+.tit h2{font-size:clamp(1.8rem,7.4vw,2.5rem);line-height:1.08;margin-top:8px}
+.tit h2 i{font-style:italic}
+/* sobre */
+.sobre{display:grid;gap:20px;align-items:center}
+.sobre .foto{position:relative}
+.sobre .foto img{border-radius:200px 200px 24px 24px;aspect-ratio:4/5;object-fit:cover;width:100%;object-position:center 30%}
+.sobre .foto:after{content:"";position:absolute;inset:-8px;border:1px solid var(--rose);border-radius:208px 208px 30px 30px;opacity:.45;pointer-events:none}
+.sobre .t{text-align:center}
+.sobre .t .script{font-size:2.9rem;line-height:1}
+.sobre p{color:var(--mut);font-size:.92rem;margin-top:10px}
+.selos{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.selos span{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--rose2);background:var(--card)}
 /* serviços */
-.cat{margin-top:34px}
-.cat h3{font-size:1.15rem;color:var(--gold2);padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:6px}
-.cat .quem{font-size:.78rem;color:var(--mut);margin-bottom:8px}
-.srv{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line)}
-.srv .n{font-weight:600}
-.srv .d{font-size:.8rem;color:var(--mut);margin-top:2px}
-.srv .p{font-weight:700;color:var(--gold2);white-space:nowrap}
-.tabela{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:4px}
-.tabela th{font-weight:600;color:var(--mut);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;text-align:right;padding:8px 0}
-.tabela th:first-child{text-align:left}
-.tabela td{padding:11px 0;border-bottom:1px dashed var(--line);text-align:right;color:var(--gold2);font-weight:700}
-.tabela td:first-child{text-align:left;color:var(--txt);font-weight:600}
-.nota{font-size:.8rem;color:var(--mut);margin-top:10px}
-.combo .p{font-weight:700;color:var(--gold2);white-space:nowrap}
-.combo{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;margin-top:10px}
-.faixa{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
-.faixa img{border-radius:14px;aspect-ratio:3/4;object-fit:cover;width:100%}
-/* agendar */
-.agenda{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
-.agenda label{display:block;font-size:.8rem;color:var(--mut);margin:16px 0 6px}
-.agenda input,.agenda select{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--txt);border-radius:12px;padding:12px;font:inherit;font-size:16px}
+.svcs{display:grid;gap:18px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.svc .img{position:relative}
+.svc img{aspect-ratio:16/11;object-fit:cover;width:100%}
+.svc .tag{position:absolute;left:14px;top:14px;background:rgba(251,247,242,.92);border-radius:999px;padding:6px 12px;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose2)}
+.svc .in{padding:18px 18px 8px}
+.svc h3{font-size:1.65rem;line-height:1.1}
+.svc .d{font-size:.8rem;color:var(--mut);margin-top:4px}
+.it{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 18px;border-top:1px dashed var(--line);font-size:.86rem}
+.it b{font-weight:600}
+.it small{display:block;color:var(--mut);font-size:.72rem}
+.it .p{font-family:"Cormorant Garamond",serif;font-size:1.3rem;font-weight:600;color:var(--rose2);white-space:nowrap}
+/* agenda */
+.agenda{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 20px 50px rgba(148,102,77,.08)}
+.agenda label.t{display:block;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin:18px 0 9px}
+.agenda label.t:first-child{margin-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips input{display:none}
-.chips label{margin:0;border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-size:.82rem;color:var(--txt);cursor:pointer}
-.chips input:checked+label{background:var(--gold);border-color:var(--gold);color:#1A1205;font-weight:700}
-.total{display:flex;justify-content:space-between;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-weight:700}
-.agenda .btn{width:100%;margin-top:18px;padding:15px}
-/* rodapé */
-.info-g{display:grid;gap:12px}
-@media(min-width:760px){.info-g{grid-template-columns:repeat(3,1fr)}}
-.info-g div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.info-g b{display:block;color:var(--gold2);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-footer{text-align:center;padding:40px 0 100px;color:var(--mut);font-size:.8rem}
-footer img{width:180px;margin:0 auto 14px;border-radius:12px}
-.flut{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 30px rgba(0,0,0,.5)}
-.dias{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
-.dias button,.horas button{background:var(--bg);border:1px solid var(--line);color:var(--txt);border-radius:12px;font:inherit;cursor:pointer}
-.dias button{min-width:62px;padding:8px 6px;font-size:.78rem;line-height:1.2}
-.dias button b{display:block;font-size:1.05rem}
-.horas{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
-.horas button{padding:10px 0;font-weight:600}
-.dias button.on,.horas button.on{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1A1205;border-color:var(--gold)}
-.vz{flex-basis:100%;grid-column:1/-1;font-size:.84rem;color:var(--mut)}
-.ok{margin-top:16px;padding:14px;border:1px solid var(--gold);border-radius:14px;font-size:.92rem;line-height:1.5}
+.chips label{border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:.8rem;cursor:pointer;background:var(--bg)}
+.chips input:checked+label{background:var(--ink);border-color:var(--ink);color:#fff}
+.chips .grp{flex-basis:100%;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose2);margin-top:6px}
+.dias{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.dias button{border:1px solid var(--line);background:var(--bg);border-radius:14px;padding:8px 0;font:inherit;font-size:.68rem;color:var(--mut);cursor:pointer}
+.dias button b{display:block;font-size:1.1rem;color:var(--ink);font-weight:600}
+.dias button.on{background:var(--ink);border-color:var(--ink);color:#d9cbbd}
+.dias button.on b{color:#fff}
+.horas{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.horas button{border:1px solid var(--line);background:var(--bg);border-radius:12px;padding:10px 0;font:inherit;font-size:.82rem;cursor:pointer}
+.horas button.on{background:var(--grad);border-color:transparent;color:#fff;font-weight:600}
+.vazio{grid-column:1/-1;margin:0;font-size:.82rem;color:var(--mut);text-align:center;padding:8px 0}
+.agenda input[type=text],.agenda input[type=tel]{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px;font:inherit;font-size:16px;color:var(--ink)}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-weight:600}
+.total span:last-child{font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--rose2)}
+.agenda .btn{width:100%;margin-top:16px;padding:17px}
+.ok{display:none;margin-top:14px;background:var(--nude);border-radius:16px;padding:16px;font-size:.86rem;text-align:center;line-height:1.6}
+/* galeria e info */
+.faixa{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.faixa img{border-radius:18px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.faixa img:nth-child(2){margin-top:28px}
+.faixa img:nth-child(4){margin-top:28px}
+.info{display:grid;gap:10px;margin-top:22px}
+.info a,.info div{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;font-size:.88rem;color:var(--ink);text-decoration:none}
+.info b{display:block;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rose2);margin-bottom:2px;font-weight:600}
+footer{text-align:center;padding:36px 0 96px;color:var(--mut);font-size:.72rem}
+footer .marca{margin-bottom:12px}
+.flut{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 30px rgba(51,38,31,.25);transition:opacity .25s,transform .25s}
+.flut.esc{opacity:0;transform:translateY(20px);pointer-events:none}
+@media(min-width:760px){
+  .sobre{grid-template-columns:1fr 1.1fr;gap:48px}
+  .sobre .t{text-align:left}.sobre .linha{margin-left:0}.selos{justify-content:flex-start}
+  .svcs{grid-template-columns:repeat(3,1fr)}
+  .faixa{grid-template-columns:repeat(4,1fr)}
+  .info{grid-template-columns:repeat(4,1fr)}
+  .agenda{max-width:620px;margin:0 auto}
+}
 </style>
 </head>
 <body>
+<header><div class="wrap"><a class="marca" href="#"><span class="lc">LC</span><span class="nm">LYSLIE CRUZ</span></a><a class="btn sm" href="#agendar">Agendar</a></div></header>
 
-<header><div class="wrap">
-  <a class="marca" href="#">ESSENCE GLAM</a>
-  <a class="btn sm" href="#agendar">Agendar</a>
-</div></header>
+<div class="hero"><div class="bg"></div><div class="wrap">
+  <div class="eyebrow">Brow Lamination · Design · Maquiagem</div>
+  <h1>Realçando seus fios de forma <i class="ouro">natural</i></h1>
+  <p>Escolha o procedimento, veja os horários livres e agende na hora. A confirmação chega no seu WhatsApp.</p>
+  <a class="btn" href="#agendar">Agendar meu horário</a>
+</div></div>
 
-<div class="hero">
-  <div class="bg"></div>
-  <div class="wrap">
-    <div class="eyebrow">Stúdio Essence Glam · Arcos-MG</div>
-    <h1>Sua beleza com <span class="gold">cuidado de perto</span></h1>
-    <p>Sobrancelha, maquiagem, penteado e cílios. Veja os serviços, os preços e já escolha o seu horário pelo WhatsApp.</p>
-    <a class="btn" href="#agendar">Agendar meu horário</a>
-    <div class="badges">
-      <span><b>Brow</b> Lamination</span><span><b>Cílios</b> fio a fio e volume</span><span><b>Maquiagem</b> e penteado</span><span>Agenda pelo <b>WhatsApp</b></span>
-    </div>
-  </div>
-</div>
-
-<section id="quem"><div class="wrap">
-  <div class="tit"><div class="eyebrow">Quem atende</div><h2>Duas profissionais, <span class="gold">um só estúdio</span></h2></div>
-  <div class="pros">
-    <div class="pro">
-      <div class="foto"><img src="img/make.jpg" alt="Maquiagem no Stúdio Essence Glam" style="object-position:center 30%"><span class="tag">Sobrancelha · Maquiagem · Penteado</span></div>
-      <div class="info"><h3>Lyslie Cruz</h3><p>Brow Lamination, design de sobrancelha, henna, maquiagem e penteado.</p></div>
-    </div>
-    <div class="pro">
-      <div class="foto"><img src="img/brow1.jpg" alt="Cílios e sobrancelha no Stúdio Essence Glam"><span class="tag">Cílios · Lash Lifting</span></div>
-      <div class="info"><h3>Geovana Oliveira</h3><p>Extensão de cílios em vários estilos e Lash Lifting.</p></div>
-    </div>
+<section id="sobre" style="padding-top:30px"><div class="wrap">
+  <div class="sobre">
+    <div class="foto"><img src="img/lyslie.jpg" alt="Lyslie Cruz"></div>
+    <div class="t"><div class="script">Prazer, Lyslie Cruz.</div><div class="linha"></div>
+      <p>Designer de sobrancelhas e especialista em Brow Lamination, em Arcos. Meu trabalho é realçar os seus fios de forma natural, respeitando o formato do seu rosto.</p>
+      <div class="selos"><span>Brow Lamination</span><span>Design com henna</span><span>Maquiagem</span></div></div>
   </div>
 </div></section>
 
-<section id="servicos" style="padding-top:20px"><div class="wrap">
-  <div class="tit"><div class="eyebrow">Serviços e preços</div><h2>Escolha o <span class="gold">seu cuidado</span></h2></div>
-
-  <div class="cat">
-    <h3>Sobrancelha</h3><div class="quem">com Lyslie Cruz</div>
-    <div class="srv"><div><div class="n">Brow Lamination</div><div class="d">60 min · retorno grátis em 30 dias</div></div><div class="p">R$ 140</div></div>
-    <div class="srv"><div><div class="n">Design com henna</div><div class="d">60 min</div></div><div class="p">R$ 50</div></div>
-    <div class="srv"><div><div class="n">Design natural</div><div class="d">40 min</div></div><div class="p">R$ 30</div></div>
-    <div class="srv"><div><div class="n">Epilação de buço</div><div class="d">10 min</div></div><div class="p">R$ 15</div></div>
-  </div>
-
-  <div class="cat">
-    <h3>Maquiagem e penteado</h3><div class="quem">com Lyslie Cruz</div>
-    <div class="srv"><div><div class="n">Maquiagem</div><div class="d">90 min</div></div><div class="p">R$ 100</div></div>
-    <div class="srv"><div><div class="n">Penteado</div><div class="d">60 min</div></div><div class="p">R$ 100</div></div>
-    <div class="srv"><div><div class="n">Babyliss cabelo curto ou médio</div><div class="d">60 min</div></div><div class="p">R$ 40</div></div>
-    <div class="srv"><div><div class="n">Babyliss cabelo longo</div><div class="d">60 min</div></div><div class="p">R$ 60</div></div>
-    <div class="faixa"><img src="img/brow3.jpg" alt="Brow Lamination no estúdio"><img src="img/brow4.jpg" alt="Produto usado no estúdio"></div>
-  </div>
-
-  <div class="cat">
-    <h3>Cílios</h3><div class="quem">com Geovana Oliveira</div>
-    <table class="tabela">
-      <tr><th>Estilo</th><th>Colocação</th><th>Manut. 20d</th><th>Manut. 30d</th></tr>
-      <tr><td>Fio U</td><td>140</td><td>75</td><td>95</td></tr>
-      <tr><td>Volume Brasileiro</td><td>120</td><td>75</td><td>95</td></tr>
-      <tr><td>Volume 4D</td><td>160</td><td>75</td><td>95</td></tr>
-      <tr><td>Volume 5D</td><td>140</td><td>75</td><td>95</td></tr>
-      <tr><td>Fox Eyes</td><td>170</td><td>75</td><td>95</td></tr>
-      <tr><td>Megafox</td><td>190</td><td>95</td><td>115</td></tr>
-    </table>
-    <div class="nota">Valores em reais. Colocação: 120 min. Manutenção de 20 dias: 60 min. Manutenção de 30 dias: 90 min.</div>
-    <div class="srv" style="margin-top:8px"><div><div class="n">Lash Lifting</div><div class="d">60 min · dura até 45 dias</div></div><div class="p">R$ 115</div></div>
-  </div>
-
-  <div class="cat">
-    <h3>Combos</h3><div class="quem">sobrancelha com a Lyslie e cílios com a Geovana, no mesmo dia</div>
-    <div class="combo"><div class="n">Combo Natalina · Brow Lamination + Extensão de cílios</div><div class="p">R$ 240</div></div>
-    <div class="combo"><div class="n">Combo Essencial · Design com henna + Extensão de cílios</div><div class="p">R$ 160</div></div>
-  </div>
+<section id="servicos" style="padding-top:10px"><div class="wrap">
+  <div class="tit"><div class="eyebrow">Procedimentos</div><h2>Escolha o seu <i class="ouro">cuidado</i></h2></div>
+  <div class="svcs" id="svcs"></div>
 </div></section>
 
-<section id="agendar" style="padding-top:20px"><div class="wrap">
-  <div class="tit"><div class="eyebrow">Agendamento</div><h2>Escolha o seu <span class="gold">horário</span></h2></div>
-  <form class="agenda" id="form" onsubmit="return false">
-    <label>1. Escolha o serviço</label>
-    <div class="chips" id="chips"><span class="vz">Carregando os serviços…</span></div>
-    <label>2. Escolha o dia</label>
+<section id="agendar" style="padding-top:10px"><div class="wrap">
+  <div class="tit"><div class="eyebrow">Agendamento</div><h2>Escolha o seu <i class="ouro">horário</i></h2></div>
+  <div class="agenda">
+    <label class="t">Procedimento</label>
+    <div class="chips" id="chips"><span class="vazio">Carregando…</span></div>
+    <label class="t">Dia</label>
     <div class="dias" id="dias"></div>
-    <label>3. Horários livres</label>
-    <div class="horas" id="horas"><span class="vz">Escolha o serviço pra ver os horários livres.</span></div>
-    <label for="nome">Seu nome</label>
-    <input id="nome" placeholder="Como você se chama?" autocomplete="name">
-    <label for="tel">Seu WhatsApp (com DDD)</label>
-    <input id="tel" inputmode="tel" placeholder="(37) 9 9999-9999" autocomplete="tel">
-    <label for="niver">Seu aniversário (opcional)</label>
-    <input id="niver" inputmode="numeric" placeholder="dd/mm" maxlength="5">
-    <div class="total"><span>Valor</span><span id="tot" class="gold">R$ 0</span></div>
-    <button class="btn" id="conf" type="button">Agendar meu horário</button>
-    <div id="ok" class="ok" style="display:none"></div>
-  </form>
+    <label class="t">Horários livres</label>
+    <div class="horas" id="horas"><p class="vazio">Escolha o procedimento pra ver os horários livres.</p></div>
+    <label class="t" for="nome">Seu nome</label>
+    <input type="text" id="nome" placeholder="Como você se chama?" autocomplete="name">
+    <label class="t" for="tel">Seu WhatsApp (com DDD)</label>
+    <input type="tel" id="tel" placeholder="(37) 9 9999-9999" autocomplete="tel">
+    <label class="t" for="niver">Seu aniversário (opcional)</label>
+    <input type="text" id="niver" inputmode="numeric" placeholder="dd/mm" maxlength="5">
+    <div class="total"><span>Valor</span><span id="tot">R$ 0</span></div>
+    <button class="btn ouro-bg" id="conf" type="button">Agendar meu horário</button>
+    <div class="ok" id="ok"></div>
+  </div>
 </div></section>
 
 <section style="padding-top:10px"><div class="wrap">
-  <div class="info-g">
-    <div><b>Endereço</b>Rua Aimorés, 110 · Arcos-MG</div>
-    <div><b>Pagamento</b>Pix, dinheiro, crédito e débito</div>
-    <div><b>Instagram</b>@lysliecruz</div>
+  <div class="tit"><div class="eyebrow">Resultados</div><h2>Do <i class="ouro">Instagram</i></h2></div>
+  <div class="faixa"><img src="img/g1.jpg" alt="Sobrancelha"><img src="img/g2.jpg" alt="Maquiagem"><img src="img/g3.jpg" alt="Maquiagem"><img src="img/g4.jpg" alt="Design de sobrancelha"></div>
+  <div class="info">
+    <a href="https://wa.me/5537999924000" target="_blank"><b>WhatsApp</b>(37) 99992-4000</a>
+    <a href="https://www.instagram.com/lysliecruz/" target="_blank"><b>Instagram</b>@lysliecruz</a>
+    <div><b>Atendimento</b>Segunda a sábado, das 8h às 18h</div>
+    <div><b>Onde</b>Arcos-MG</div>
   </div>
 </div></section>
 
-<footer><img src="img/logo.jpg" alt="Stúdio Essence Glam"><div>Stúdio Essence Glam · Arcos-MG</div></footer>
-<a class="btn flut" href="#agendar">Agendar</a>
+<footer><div class="marca"><span class="lc">LC</span><span class="nm">LYSLIE CRUZ</span><span class="sub">Designer de sobrancelhas</span><span class="sub">Especialista em Brow Lamination</span></div></footer>
+<a class="btn flut esc" id="flut" href="#agendar">Agendar</a>
 
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script>
-/* Agendamento ligado à agenda do estúdio: mostra só horário livre; o pedido vira agendamento em poucos minutos e a confirmação chega no WhatsApp */
+/* Catálogo e agendamento ligados à agenda: preços e serviços vêm da agenda; mostra só horário livre; o pedido vira agendamento e a confirmação chega no WhatsApp */
 firebase.initializeApp({apiKey:"AIzaSyCD9idHK-P7mOBQGlqwbG3_Y-0BjaB-Ft4",authDomain:"essence-glam.firebaseapp.com",projectId:"essence-glam",storageBucket:"essence-glam.firebasestorage.app",messagingSenderId:"363415024268",appId:"1:363415024268:web:d104449d1df9a6b9f501a9"});
 var db=firebase.firestore(),CAT={servicos:[],profissionais:[],expediente:{ini:'08:00',fim:'18:00',passo:30,dias:[1,2,3,4,5,6]}},OC={},sv=null,dsel=null,hsel=null,meus=[];
 var $=function(i){return document.getElementById(i)};
@@ -216,28 +192,41 @@ function toMin(h){var p=String(h||'0:0').split(':');return (+p[0])*60+(+p[1]||0)
 function toH(m){return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')}
 function ymd(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function dur(m){m=Number(m)||0;var h=Math.floor(m/60),r=m%60;return h?(h+'h'+(r?String(r).padStart(2,'0'):'')):(r+' min')}
+function preco(v){return v==null?'Consultar':(Number(v)===0?'Grátis':'R$ '+v)}
+var GRUPOS=[
+  {t:'Sobrancelhas',d:'Design que respeita o formato do seu rosto e realça os seus fios.',img:'img/brow.jpg',tag:'Especialidade',ids:['s-browlam','s-browlam-ret','s-henna','s-design','s-buco']},
+  {t:'Maquiagem e penteado',d:'Pele bonita e acabamento que dura a festa toda.',img:'img/make.jpg',tag:'Eventos',ids:['s-make','s-penteado']},
+  {t:'Combos',d:'Sobrancelha com a Lyslie e extensão de cílios com a Geovana Oliveira, no mesmo dia.',img:'img/henna.jpg',tag:'Sobrancelha + cílios',combo:true}
+];
 async function carrega(){var c=await db.doc('publico/catalogo').get();if(c.exists)CAT=c.data();var a=await db.doc('publico/agenda').get();OC=a.exists?(a.data().ocupados||{}):{}}
-function ocupado(data,prof,ini,fim){var l=(OC[data]||[]).concat(meus.filter(function(x){return x.split('|')[3]===data}));return l.some(function(x){var p=x.split('|');return (!p[0]||p[0]===prof)&&ini<+p[2]&&fim>+p[1]})}
-function chips(){var el=$('chips');el.innerHTML='';var porProf={};CAT.servicos.forEach(function(s,i){(porProf[s.profId]=porProf[s.profId]||[]).push([s,i])});
-  CAT.profissionais.forEach(function(p){if(!porProf[p.id])return;el.insertAdjacentHTML('beforeend','<span class="vz" style="margin-top:6px">com '+esc(p.nome.split(' ')[0])+'</span>');porProf[p.id].forEach(function(x){el.insertAdjacentHTML('beforeend','<input type="radio" name="sv" id="s'+x[1]+'" value="'+x[1]+'"><label for="s'+x[1]+'">'+esc(x[0].nome)+(x[0].preco?' · R$ '+x[0].preco:'')+'</label>')})});
-  if(!CAT.servicos.length)el.innerHTML='<span class="vz">Não deu pra carregar os serviços agora. Atualize a página.</span>';
-  el.onchange=function(){var c=el.querySelector('input:checked');sv=c?CAT.servicos[c.value]:null;$('tot').textContent='R$ '+(sv&&sv.preco||0);horas()}}
-function dias(){var el=$('dias');el.innerHTML='';var DS=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],d=new Date(),k=0,n=0;while(k<14&&n<40){d.setDate(d.getDate()+1);n++;if(CAT.expediente.dias.indexOf(d.getDay())<0)continue;var b=document.createElement('button');b.type='button';b.innerHTML=DS[d.getDay()]+'<b>'+d.getDate()+'</b>';b.dataset.data=ymd(d);b.onclick=function(){el.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});this.classList.add('on');dsel=this;horas()};el.appendChild(b);k++}if(el.firstChild)el.firstChild.click()}
-function horas(){var el=$('horas');el.innerHTML='';hsel=null;if(!sv){el.innerHTML='<span class="vz">Escolha o serviço pra ver os horários livres.</span>';return}if(!dsel)return;var ex=CAT.expediente,du=Number(sv.duracao)||60,L=[];for(var t=toMin(ex.ini);t+du<=toMin(ex.fim);t+=ex.passo){if(!ocupado(dsel.dataset.data,sv.profId,t,t+du))L.push(toH(t))}
-  if(!L.length){el.innerHTML='<span class="vz">Esse dia está cheio. Escolha outro dia.</span>';return}L.forEach(function(h){var b=document.createElement('button');b.type='button';b.textContent=h;b.onclick=function(){el.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});this.classList.add('on');hsel=h};el.appendChild(b)})}
+function profsDe(s){return (s.profs&&s.profs.length)?s.profs:[s.profId]}
+function ocupado(data,profs,ini,fim){var l=(OC[data]||[]).concat(meus.filter(function(x){return x.split('|')[3]===data}));return l.some(function(x){var p=x.split('|');return (!p[0]||profs.indexOf(p[0])>=0)&&ini<+p[2]&&fim>+p[1]})}
+function cartoes(){var el=$('svcs'),usados={};el.innerHTML='';GRUPOS.forEach(function(g){var ls=CAT.servicos.filter(function(s){return g.combo?s.combo:(g.ids.indexOf(s.id)>=0)});if(!ls.length)return;ls.forEach(function(s){usados[s.id]=1});
+  el.insertAdjacentHTML('beforeend','<div class="svc"><div class="img"><img src="'+g.img+'" alt="'+esc(g.t)+'"><span class="tag">'+esc(g.tag)+'</span></div><div class="in"><h3>'+esc(g.t)+'</h3><div class="d">'+esc(g.d)+'</div></div>'+ls.map(function(s){return '<div class="it"><div><b>'+esc(s.nome.replace(/^Combo (\w+) \((.*)\)$/,'Combo $1 · $2'))+'</b><small>'+dur(s.duracao)+'</small></div><span class="p">'+preco(s.preco)+'</span></div>'}).join('')+'</div>')});
+  var resto=CAT.servicos.filter(function(s){return !usados[s.id]});if(resto.length)el.insertAdjacentHTML('beforeend','<div class="svc"><div class="in"><h3>Outros</h3></div>'+resto.map(function(s){return '<div class="it"><div><b>'+esc(s.nome)+'</b><small>'+dur(s.duracao)+'</small></div><span class="p">'+preco(s.preco)+'</span></div>'}).join('')+'</div>')}
+function chips(){var el=$('chips');el.innerHTML='';if(!CAT.servicos.length){el.innerHTML='<span class="vazio">Não deu pra carregar agora. Atualize a página.</span>';return}
+  var add=function(t,ls){if(!ls.length)return;el.insertAdjacentHTML('beforeend','<span class="grp">'+t+'</span>');ls.forEach(function(s){var i=CAT.servicos.indexOf(s);el.insertAdjacentHTML('beforeend','<input type="radio" name="sv" id="s'+i+'" value="'+i+'"><label for="s'+i+'">'+esc(s.nome.replace(/ \(.*\)$/,''))+'</label>')})};
+  add('Lyslie',CAT.servicos.filter(function(s){return !s.combo}));add('Combos com a Geovana',CAT.servicos.filter(function(s){return s.combo}));
+  el.onchange=function(){var c=el.querySelector('input:checked');sv=c?CAT.servicos[c.value]:null;$('tot').textContent=sv?preco(sv.preco):'R$ 0';horas()}}
+function dias(){var el=$('dias');el.innerHTML='';var DS=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],d=new Date(),k=0,n=0;while(k<10&&n<40){d.setDate(d.getDate()+1);n++;if(CAT.expediente.dias.indexOf(d.getDay())<0)continue;var b=document.createElement('button');b.type='button';b.innerHTML=DS[d.getDay()]+'<b>'+d.getDate()+'</b>';b.dataset.data=ymd(d);b.onclick=function(){el.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});this.classList.add('on');dsel=this;horas()};el.appendChild(b);k++}if(el.firstChild)el.firstChild.click()}
+function horas(){var el=$('horas');el.innerHTML='';hsel=null;if(!sv){el.innerHTML='<p class="vazio">Escolha o procedimento pra ver os horários livres.</p>';return}if(!dsel)return;var ex=CAT.expediente,du=Number(sv.duracao)||60,L=[];for(var t=toMin(ex.ini);t+du<=toMin(ex.fim);t+=ex.passo){if(!ocupado(dsel.dataset.data,profsDe(sv),t,t+du))L.push(toH(t))}
+  if(!L.length){el.innerHTML='<p class="vazio">Esse dia está cheio. Escolha outro dia.</p>';return}L.forEach(function(h){var b=document.createElement('button');b.type='button';b.textContent=h;b.onclick=function(){el.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});this.classList.add('on');hsel=h};el.appendChild(b)})}
 $('conf').onclick=async function(){var o=$('ok'),btn=this,nome=$('nome').value.trim(),tel=$('tel').value.trim(),nv=$('niver').value.trim(),f=[];
-  if(!sv)f.push('o serviço');if(!hsel)f.push('o horário');if(!nome)f.push('o seu nome');if(tel.replace(/\D/g,'').length<10)f.push('o seu WhatsApp com DDD');if(nv&&!/^\d{2}\/\d{2}$/.test(nv))f.push('o aniversário no formato dd/mm');
+  if(!sv)f.push('o procedimento');if(!hsel)f.push('o horário');if(nome.length<2)f.push('o seu nome');if(tel.replace(/\D/g,'').length<10)f.push('o seu WhatsApp com DDD');if(nv&&!/^\d{2}\/\d{2}$/.test(nv))f.push('o aniversário no formato dd/mm');
   o.style.display='block';if(f.length){o.textContent='Falta '+f.join(', ')+'.';return}
   btn.disabled=true;o.textContent='Agendando…';
   try{await carrega();var data=dsel.dataset.data,du=Number(sv.duracao)||60,ini=toMin(hsel);
-    if(ocupado(data,sv.profId,ini,ini+du)){btn.disabled=false;o.textContent='Esse horário acabou de ser ocupado. Escolha outro, por favor.';horas();return}
+    if(ocupado(data,profsDe(sv),ini,ini+du)){btn.disabled=false;o.textContent='Esse horário acabou de ser ocupado. Escolha outro, por favor.';horas();return}
     await db.collection('pedidos_site').add({nome:nome.slice(0,60),telefone:tel.slice(0,20),servicoId:sv.id,servicoNome:sv.nome,profId:sv.profId,data:data,hora:hsel,duracao:du,nascimento:nv,status:'novo',criadoEm:new Date().toISOString()});
-    meus.push(sv.profId+'|'+ini+'|'+(ini+du)+'|'+data);
+    profsDe(sv).forEach(function(p){meus.push(p+'|'+ini+'|'+(ini+du)+'|'+data)});
     var dia=dsel.textContent.replace(/(\D+)(\d+)/,'$1 $2');
-    o.innerHTML='Prontinho, '+esc(nome.split(' ')[0])+'! 💗 Seu horário de '+esc(sv.nome)+' ficou para '+esc(dia)+', às '+hsel+'. Em alguns minutos chega a confirmação no seu WhatsApp.';
-    horas();}catch(e){console.error(e);o.textContent='Não deu pra agendar agora. Tente de novo em instantes.'}
+    o.innerHTML='Prontinho, '+esc(nome.split(' ')[0])+'! 💗<br>Seu horário de <b>'+esc(sv.nome.replace(/ \(.*\)$/,''))+'</b> ficou para <b>'+esc(dia)+', às '+hsel+'</b>.<br>Em alguns minutos chega a confirmação no seu WhatsApp.';
+    horas()}catch(e){console.error(e);o.textContent='Não deu pra agendar agora. Tente de novo em instantes.'}
   btn.disabled=false};
-(async function(){try{await carrega()}catch(e){console.error(e)}chips();dias()})();
+/* botão flutuante só aparece fora do topo e fora do agendamento */
+(function(){var vis={};var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.className||e.target.id]=e.isIntersecting});$('flut').classList.toggle('esc',!!(vis.hero||vis.agendar))},{threshold:.15});io.observe(document.querySelector('.hero'));io.observe($('agendar'))})();
+(async function(){try{await carrega()}catch(e){console.error(e)}cartoes();chips();dias()})();
 </script>
 </body>
 </html>
