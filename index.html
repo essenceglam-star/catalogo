@@ -40,7 +40,7 @@ header .marca .nm{font-size:.92rem;margin:0}
 .btn.lin{background:none;color:var(--ink);border:1px solid var(--ink)}
 /* hero */
 .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 6%/cover}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 12%/cover}
 .hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(251,247,242,0) 0%,rgba(251,247,242,0) 46%,rgba(251,247,242,.88) 70%,var(--bg) 90%)}
 .hero .wrap{position:relative;padding-bottom:48px;padding-top:140px;text-align:center}
 .hero .marca{margin-bottom:18px}
@@ -119,6 +119,14 @@ footer .marca{margin-bottom:12px}
 .flut{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 30px rgba(51,38,31,.25);transition:opacity .25s,transform .25s}
 .flut.esc{opacity:0;transform:translateY(20px);pointer-events:none}
 @media(min-width:620px){.svcs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){
+  .hero{min-height:84vh;align-items:center}
+  .hero .bg{left:48%;background-position:center 18%}
+  .hero .bg:after{background:linear-gradient(90deg,var(--bg) 0%,rgba(251,247,242,.55) 14%,rgba(251,247,242,0) 40%)}
+  .hero .wrap{text-align:left;padding:60px 20px;width:100%}
+  .hero .wrap > *{max-width:46%}
+  .hero p{margin-left:0}
+}
 @media(min-width:760px){
   .sobre{grid-template-columns:1fr 1.1fr;gap:48px}
   .sobre .t{text-align:left}.sobre .linha{margin-left:0}.selos{justify-content:flex-start}
